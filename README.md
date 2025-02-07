@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/928787433.svg)](https://doi.org/10.5281/zenodo.14831784)
 # Comprehensive Maize Disease Classification via Deep Learning with Integrated Multi-Source Data
 
 **Authors:** Pimal Khanpara, Bhaumik Panchal, Preeti Kathiria*, Usha Patel*, Deekshita Athreya  
