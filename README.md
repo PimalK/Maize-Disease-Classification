@@ -58,7 +58,7 @@ We experimented with the following deep learning models:
 - **Xception**
 - **VGG16**
 - **ResNet50**
-- **MobileNet3D**
+- **MobileNet**
 - **DenseNet121**
 - **AlexNet**
 - **Custom CNN**
