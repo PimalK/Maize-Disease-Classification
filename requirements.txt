@@ -1,0 +1,9 @@
+numpy
+pickle-mixin
+opencv-python
+tensorflow
+matplotlib
+seaborn
+scikit-learn
+keras
+pillow
