@@ -61,14 +61,6 @@ We experimented with the following deep learning models:
    git clone https://github.com/yourusername/maize-disease-classification.git
    cd maize-disease-classification
    ```
-2. Prepare the dataset and place it in the required directory structure.
-3. Train the model:
-   ```sh
-   python train.py --model DenseNet121
-   ```
-4. Evaluate the model:
-   ```sh
-   python evaluate.py --model DenseNet121
-   ```
+2. Run the ipynb files as required
 ---
 **For more details, refer to the documentation or contact the corresponding authors.**
