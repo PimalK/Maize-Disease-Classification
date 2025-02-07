@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ```
 
 ## Dataset Preparation
-A comprehensive and diverse dataset for maize disease detection was created by combining images from three distinct datasets.
+A comprehensive and diverse dataset for maize disease detection was created by combining images from three distinct datasets. 1000 images of each class were randomly chosen from 23,655 images in the combination. For classes with less than 1000 images, augmentation was performed.
 ### Dataset Links
 
 - **PlantVillage Dataset**  
@@ -40,6 +40,7 @@ A comprehensive and diverse dataset for maize disease detection was created by c
 - **Corn Leaf Diseases (NLB)**  
   [Corn Leaf Diseases (NLB) on Kaggle](https://www.kaggle.com/datasets/rabbityashow/corn-leaf-diseasesnlb)
 
+The corresponding authors can be contacted for access to the combined dataset.
 
 ### Dataset Structure:
 ```
