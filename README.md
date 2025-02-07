@@ -28,7 +28,18 @@ pip install -r requirements.txt
 ```
 
 ## Dataset Preparation
-A comprehensive and diverse dataset for maize disease detection was created by combining images from three distinct datasets. The dataset consists of multiple classes:
+A comprehensive and diverse dataset for maize disease detection was created by combining images from three distinct datasets.
+### Dataset Links
+
+- **PlantVillage Dataset**  
+  [Corn/Maize Leaf Disease Dataset on Kaggle](https://www.kaggle.com/datasets/smaranjitghose/corn-or-maize-leaf-disease-dataset)
+
+- **Maize Imagery Dataset - Tanzania**  
+  [Mendeley Data Repository](https://data.mendeley.com/datasets/fkw49mz3xs/1)
+
+- **Corn Leaf Diseases (NLB)**  
+  [Corn Leaf Diseases (NLB) on Kaggle](https://www.kaggle.com/datasets/rabbityashow/corn-leaf-diseasesnlb)
+
 
 ### Dataset Structure:
 ```
@@ -61,6 +72,6 @@ We experimented with the following deep learning models:
    git clone https://github.com/yourusername/maize-disease-classification.git
    cd maize-disease-classification
    ```
-2. Run the ipynb files as required
+2. Run the ipynb files in models.zip as required
 ---
 **For more details, refer to the documentation or contact the corresponding authors.**
