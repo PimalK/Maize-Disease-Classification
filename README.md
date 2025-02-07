@@ -76,8 +76,8 @@ We experimented with the following deep learning models:
    ```
 2. Run the ipynb files in models.zip as required
 ---
-## Citation
+## Cite this as
 ```sh
-[1]PimalK, “PimalK/Maize-Disease-Classification: Maize Disease Classification”. Zenodo, Feb. 07, 2025. doi: 10.5281/zenodo.14831785.
+PimalK, “PimalK/Maize-Disease-Classification: Maize Disease Classification”. Zenodo, Feb. 07, 2025. doi: 10.5281/zenodo.14831785.
 ```
 **For more details, refer to the documentation or contact the corresponding authors.**
