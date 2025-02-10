@@ -23,6 +23,17 @@ This study highlights the potential of multi-source data integration and transfe
 ---
 
 ## Installation
+The code has the following dependencies:
+- `numpy`
+- `pickle-mixin`
+- `opencv-python`
+- `tensorflow`
+- `matplotlib`
+- `seaborn`
+- `scikit-learn`
+- `keras`
+- `pillow`
+
 Ensure you have Python installed, then install the required dependencies:
 ```sh
 pip install -r requirements.txt
