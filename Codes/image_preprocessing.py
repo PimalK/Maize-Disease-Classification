@@ -12,7 +12,7 @@ from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.model_selection import train_test_split
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-directory_root = 'Combined Data'
+directory_root = 'Dataset'
 def convert_image_to_array(image_dir, default_image_size=(128, 128)):
     """
     Converts an image to a NumPy array after resizing it to the default image size.
