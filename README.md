@@ -53,16 +53,7 @@ The corresponding authors can be contacted for access to the combined dataset.
   - MLN
   - MSV
 ```
-## Downloading Model weights
-The weights for ResNet50, DenseNet121, VGG16 and XCeption are available at: https://www.kaggle.com/datasets/antoreepjana/tf-keras-pretrained-model-weights
-The following files need to be downloaded:
--densenet121_weights_tf_dim_ordering_tf_kernels_notop.h5
--resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5
--vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5
--xception_weights_tf_dim_ordering_tf_kernels_notop.h5
-The weights for MobileNet V2 is available at: https://www.kaggle.com/datasets/xhlulu/mobilenet-v2-keras-weights
-The following file needs to be downloaded:
--mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_224_no_top.h5
+
 ## Models Used
 We experimented with the following deep learning models. All the pretrained models were fine-tuned on the combined dataset specified above.
 
@@ -103,7 +94,22 @@ We experimented with the following deep learning models. All the pretrained mode
   The output of a convolutional layer can be represented as:  
   **z = σ(W * x + b)**  
   where **z** is the output, **σ** is the activation function (e.g., ReLU), and **W * x** represents the convolution operation.
+## Downloading Model Weights
 
+The weights for **ResNet50, DenseNet121, VGG16, and XCeption** are available at:  
+[Pretrained Model Weights - Kaggle](https://www.kaggle.com/datasets/antoreepjana/tf-keras-pretrained-model-weights)
+
+The following files need to be downloaded:
+- `densenet121_weights_tf_dim_ordering_tf_kernels_notop.h5`
+- `resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5`
+- `vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5`
+- `xception_weights_tf_dim_ordering_tf_kernels_notop.h5`
+
+The weights for **MobileNet V2** are available at:  
+[MobileNet V2 Weights - Kaggle](https://www.kaggle.com/datasets/xhlulu/mobilenet-v2-keras-weights)
+
+The following file needs to be downloaded:
+- `mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_224_no_top.h5`
 ## Results
 - **Best Performing Model:** DenseNet121
 - **Highest Accuracy:** 97.28%
@@ -118,8 +124,11 @@ We experimented with the following deep learning models. All the pretrained mode
    ![image](https://github.com/user-attachments/assets/a2214100-08ac-4fbb-be2e-9a18f8817b29)
 
 4. Each ipynb file contains the complete code of the model specified in the filename.
-5. Run the cells of each ipynb file in sequence to replicate the results.
-6. The trained models will be saved to the root directory with a .h5 extension.
+5. The path of the downloaded pretrained weights needs to be specified in the 4th cell of every code file. This is given as an argument to the 'weights' parameter while instatiating the model.
+   ![image](https://github.com/user-attachments/assets/2bf4ecd3-1d80-4764-854c-79520eaf3bce)
+
+7. Run the cells of each ipynb file in sequence to replicate the results.
+8. The trained models will be saved to the root directory with a .h5 extension.
 ---
 ## Cite this as
 ```sh
