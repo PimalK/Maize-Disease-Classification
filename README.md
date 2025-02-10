@@ -110,23 +110,7 @@ We experimented with the following deep learning models. All the pretrained mode
 <img width="611" alt="CNN architecture" src="https://github.com/user-attachments/assets/8faa9596-f2e2-465f-bbb3-de5ea33fbf2c" />  
 
 **Architecture of custom CNN**
-  
-## Downloading Model Weights
 
-The weights for **ResNet50, DenseNet121, VGG16, and XCeption** are available at:  
-[Pretrained Model Weights - Kaggle](https://www.kaggle.com/datasets/antoreepjana/tf-keras-pretrained-model-weights)
-
-The following files need to be downloaded:
-- `densenet121_weights_tf_dim_ordering_tf_kernels_notop.h5`
-- `resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5`
-- `vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5`
-- `xception_weights_tf_dim_ordering_tf_kernels_notop.h5`
-
-The weights for **MobileNet V2** are available at:  
-[MobileNet V2 Weights - Kaggle](https://www.kaggle.com/datasets/xhlulu/mobilenet-v2-keras-weights)
-
-The following file needs to be downloaded:
-- `mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_224_no_top.h5`
 ## Results
 - **Best Performing Model:** DenseNet121
 - **Highest Accuracy:** 97.28%
@@ -138,11 +122,8 @@ The following file needs to be downloaded:
    cd maize-disease-classification
    ```
 2. Each ipynb file contains the complete code of the model specified in the filename.
-3. The path of the downloaded pretrained weights needs to be specified in the 4th cell of every code file. This is given as an argument to the 'weights' parameter while instatiating the model.
-   ![image](https://github.com/user-attachments/assets/2bf4ecd3-1d80-4764-854c-79520eaf3bce)
-
-4. Run the cells of each ipynb file in sequence to replicate the results.
-5. The trained models will be saved to the root directory with a .h5 extension.
+3. Run the cells of each ipynb file in sequence to replicate the results.
+4. The trained models will be saved to the root directory with a .h5 extension.
 ---
 ## Cite this repository as
 ```sh
