@@ -111,10 +111,6 @@ We experimented with the following deep learning models. All the pretrained mode
 
 **Architecture of custom CNN**
 
-## Results
-- **Best Performing Model:** DenseNet121
-- **Highest Accuracy:** 97.28%
-
 ## Usage
 1. Clone the repository:
    ```sh
@@ -125,6 +121,11 @@ We experimented with the following deep learning models. All the pretrained mode
 3. Run the cells of each ipynb file in sequence to replicate the results.
 4. The trained models will be saved to the root directory with a .h5 extension.
 ---
+
+## Results
+- **Best Performing Model:** DenseNet121
+- **Highest Accuracy:** 97.28%
+
 ## Cite this repository as
 ```sh
 PimalK, “PimalK/Maize-Disease-Classification: Maize Disease Classification”. Zenodo, Feb. 07, 2025. doi: 10.5281/zenodo.14831785.
