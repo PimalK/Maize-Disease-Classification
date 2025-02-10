@@ -137,15 +137,12 @@ The following file needs to be downloaded:
    git clone https://github.com/yourusername/maize-disease-classification.git
    cd maize-disease-classification
    ```
-3. Change the directory_root variable to path of dataset in line 15 of image_preprocessing.py
-   ![image](https://github.com/user-attachments/assets/a2214100-08ac-4fbb-be2e-9a18f8817b29)
-
-4. Each ipynb file contains the complete code of the model specified in the filename.
-5. The path of the downloaded pretrained weights needs to be specified in the 4th cell of every code file. This is given as an argument to the 'weights' parameter while instatiating the model.
+2. Each ipynb file contains the complete code of the model specified in the filename.
+3. The path of the downloaded pretrained weights needs to be specified in the 4th cell of every code file. This is given as an argument to the 'weights' parameter while instatiating the model.
    ![image](https://github.com/user-attachments/assets/2bf4ecd3-1d80-4764-854c-79520eaf3bce)
 
-7. Run the cells of each ipynb file in sequence to replicate the results.
-8. The trained models will be saved to the root directory with a .h5 extension.
+4. Run the cells of each ipynb file in sequence to replicate the results.
+5. The trained models will be saved to the root directory with a .h5 extension.
 ---
 ## Cite this repository as
 ```sh
