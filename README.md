@@ -53,7 +53,16 @@ The corresponding authors can be contacted for access to the combined dataset.
   - MLN
   - MSV
 ```
-
+## Downloading Model weights
+The weights for ResNet50, DenseNet121, VGG16 and XCeption are available at: https://www.kaggle.com/datasets/antoreepjana/tf-keras-pretrained-model-weights
+The following files need to be downloaded:
+-densenet121_weights_tf_dim_ordering_tf_kernels_notop.h5
+-resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5
+-vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5
+-xception_weights_tf_dim_ordering_tf_kernels_notop.h5
+The weights for MobileNet V2 is available at: https://www.kaggle.com/datasets/xhlulu/mobilenet-v2-keras-weights
+The following file needs to be downloaded:
+-mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_224_no_top.h5
 ## Models Used
 We experimented with the following deep learning models. All the pretrained models were fine-tuned on the combined dataset specified above.
 
@@ -94,14 +103,6 @@ We experimented with the following deep learning models. All the pretrained mode
   The output of a convolutional layer can be represented as:  
   **z = σ(W * x + b)**  
   where **z** is the output, **σ** is the activation function (e.g., ReLU), and **W * x** represents the convolution operation.
-https://www.kaggle.com/datasets/antoreepjana/tf-keras-pretrained-model-weights
-densenet121_weights_tf_dim_ordering_tf_kernels_notop.h5
-resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5
-vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5
-xception_weights_tf_dim_ordering_tf_kernels_notop.h5
-
-https://www.kaggle.com/datasets/xhlulu/mobilenet-v2-keras-weights
-mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_224_no_top.h5
 
 ## Results
 - **Best Performing Model:** DenseNet121
