@@ -19,6 +19,9 @@ We applied seven popular deep learning (DL) models, including AlexNet, VGG16, CN
 Among the tested models, **DenseNet121 achieved the highest average accuracy of 97.28%**, underscoring its superior ability to generalize across diverse image sources. 
 
 This study highlights the potential of multi-source data integration and transfer learning in building reliable maize disease classification systems, offering valuable insights into the strengths and limitations of different DL approaches in practical agricultural applications.
+![flowchart](https://github.com/user-attachments/assets/fbd2574d-a48c-454b-bc69-4091297eabae)  
+
+**Flow of proposed approach**
 
 ---
 
@@ -52,11 +55,9 @@ A comprehensive and diverse dataset for maize disease detection was created by c
 - **Corn Leaf Diseases (NLB)**  
   [Corn Leaf Diseases (NLB) on Kaggle](https://www.kaggle.com/datasets/rabbityashow/corn-leaf-diseasesnlb)
 
-The corresponding authors can be contacted for access to the combined dataset.
-
 ### Dataset Structure:
 ```
-- Combined
+- Dataset
   - HEALTHY
   - Maize_Blight
   - Maize_Common_Rust
@@ -105,6 +106,11 @@ We experimented with the following deep learning models. All the pretrained mode
   The output of a convolutional layer can be represented as:  
   **z = σ(W * x + b)**  
   where **z** is the output, **σ** is the activation function (e.g., ReLU), and **W * x** represents the convolution operation.
+
+<img width="611" alt="CNN architecture" src="https://github.com/user-attachments/assets/8faa9596-f2e2-465f-bbb3-de5ea33fbf2c" />  
+
+**Architecture of custom CNN**
+  
 ## Downloading Model Weights
 
 The weights for **ResNet50, DenseNet121, VGG16, and XCeption** are available at:  
@@ -141,8 +147,19 @@ The following file needs to be downloaded:
 7. Run the cells of each ipynb file in sequence to replicate the results.
 8. The trained models will be saved to the root directory with a .h5 extension.
 ---
-## Cite this as
+## Cite this repository as
 ```sh
 PimalK, “PimalK/Maize-Disease-Classification: Maize Disease Classification”. Zenodo, Feb. 07, 2025. doi: 10.5281/zenodo.14831785.
 ```
-**For more details, refer to the documentation or contact the corresponding authors.**
+## Cite the manuscript as
+```sh
+@article{Khanpara2025MaizeDisease,
+  author    = {Pimal Khanpara and Bhaumik Panchal and Preeti Kathiria and Usha Patel and Deekshita Athreya},
+  title     = {Comprehensive Maize Disease Classification via Deep Learning with Integrated Multi-Source Data},
+  journal   = {The Visual Computer},
+  year      = {2025},
+  publisher = {Springer}
+}
+
+```
+**For more details, refer to the manuscript or contact the corresponding authors.**
