@@ -55,14 +55,53 @@ The corresponding authors can be contacted for access to the combined dataset.
 ```
 
 ## Models Used
-We experimented with the following deep learning models:
-- **Xception**
-- **VGG16**
-- **ResNet50**
-- **MobileNet**
-- **DenseNet121**
-- **AlexNet**
-- **Custom CNN**
+We experimented with the following deep learning models. All the pretrained models were fine-tuned on the combined dataset specified above.
+
+- **Xception**: Xception replaces Inception modules with depthwise separable convolutions and residual connections, which can be expressed as:  
+  **y = FDW(FPW(x))**  
+  where **FDW** is the depthwise convolution and **FPW** is the pointwise convolution.  
+  This structure reduces parameters while improving performance in image classification.
+
+- **VGG16**: VGG16 is a 13-layer CNN that utilizes ReLU activation, max pooling, and fully connected layers for classification. The convolutional layers apply filters **W** to input **X**, producing feature maps:  
+  **Z = max(0, W * X + b)**  
+  Max pooling is used to reduce spatial dimensions, and the fully connected layers combine features as:  
+  **z(l) = max(0, W(l) * z(l−1) + b(l))**  
+  The final output is generated using a softmax function to obtain class probabilities.
+
+- **ResNet50**: ResNet solves the vanishing gradient problem using skip connections (residual connections), which can be mathematically represented as:  
+  **H(x) = F(x) + x**  
+  where **H(x)** is the output of the residual block, **F(x)** is the function to learn, and **x** is the input.  
+  This structure helps in improving gradient flow in deep networks.
+
+- **MobileNetV2**: MobileNet is optimized for mobile devices, employing depthwise separable convolutions, which can be defined mathematically as:  
+  **y = D(x) * S(x)**  
+  where **D** denotes the depthwise convolution and **S** denotes the pointwise convolution (1x1 convolution).  
+  This architecture uses adjustable parameters to balance accuracy with efficiency.
+
+- **DenseNet121**: DenseNet connects each layer to every other layer, enhancing gradient flow and feature reuse. The output for a layer in DenseNet121 can be represented as:  
+  **xl = H(xl−1, xl−2, ... , x0)**  
+  where **xl** is the output of layer **l** and **H** is the composite function of the operations performed.  
+  Dense blocks and transition layers are utilized for efficient learning.
+
+- **AlexNet**: AlexNet is a CNN with five convolutional layers, using ReLU activation, max pooling, Local Response Normalization (LRN), and dropout to prevent overfitting. The architecture can be represented mathematically as:  
+  **y = f(W · x + b)**  
+  where **y** is the output, **W** is the weight matrix, **x** is the input, **b** is the bias, and **f** is the ReLU activation function.  
+  It is trained with backpropagation using the RMSprop optimizer:  
+  **W ← W − η∇L**  
+  where **η** is the learning rate and **L** is the loss function.
+
+- **Custom CNN**: The customized CNN is tailored for specific tasks and consists of convolutional and pooling layers, batch normalization, dropout, and fully connected layers to map features to output classes.  
+  The output of a convolutional layer can be represented as:  
+  **z = σ(W * x + b)**  
+  where **z** is the output, **σ** is the activation function (e.g., ReLU), and **W * x** represents the convolution operation.
+https://www.kaggle.com/datasets/antoreepjana/tf-keras-pretrained-model-weights
+densenet121_weights_tf_dim_ordering_tf_kernels_notop.h5
+resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5
+vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5
+xception_weights_tf_dim_ordering_tf_kernels_notop.h5
+
+https://www.kaggle.com/datasets/xhlulu/mobilenet-v2-keras-weights
+mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_224_no_top.h5
 
 ## Results
 - **Best Performing Model:** DenseNet121
@@ -74,7 +113,12 @@ We experimented with the following deep learning models:
    git clone https://github.com/yourusername/maize-disease-classification.git
    cd maize-disease-classification
    ```
-2. Run the ipynb files in models.zip as required
+3. Change the directory_root variable to path of dataset in line 15 of image_preprocessing.py
+   ![image](https://github.com/user-attachments/assets/a2214100-08ac-4fbb-be2e-9a18f8817b29)
+
+4. Each ipynb file contains the complete code of the model specified in the filename.
+5. Run the cells of each ipynb file in sequence to replicate the results.
+6. The trained models will be saved to the root directory with a .h5 extension.
 ---
 ## Cite this as
 ```sh
