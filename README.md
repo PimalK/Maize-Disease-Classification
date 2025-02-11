@@ -26,7 +26,7 @@ This study highlights the potential of multi-source data integration and transfe
 ---
 
 ## Installation
-The code requires Python 3.7 to run. It has the following dependencies:
+The code requires Python 3.7 to run. It requires the following packages with versions mentioned alongside:
 - `numpy 1.21.6`
 - `pickle-mixin 1.0.2`
 - `opencv-python 4.9.0.80`
@@ -37,7 +37,7 @@ The code requires Python 3.7 to run. It has the following dependencies:
 - `keras 2.11.0`
 - `pillow 9.5.0`
 
-Ensure you have Python 3.7 installed, then install the required dependencies:
+Once Python 3.7 is installed, the abovementioned packages can be installed using:  
 ```sh
 pip install -r requirements.txt
 ```
