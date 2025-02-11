@@ -54,7 +54,7 @@ A comprehensive and diverse dataset for maize disease detection was created by c
 
 - **Corn Leaf Diseases (NLB)**  
   [Corn Leaf Diseases (NLB) on Kaggle](https://www.kaggle.com/datasets/rabbityashow/corn-leaf-diseasesnlb)  
-The final combined dataset can be found in the **Dataset** folder
+- The final combined dataset that we have generated from the above mentioned datasets can be found in the **Dataset** folder
 ## Repository Structure:
 ```
 - Dataset
