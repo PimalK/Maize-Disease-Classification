@@ -4,7 +4,7 @@
 **Authors:** Pimal Khanpara, Bhaumik Panchal, Preeti Kathiria*, Usha Patel*, Deekshita Athreya  
 (* denotes corresponding authorship)
 
-## Abstract
+## Introduction
 Accurate detection of maize diseases is crucial for ensuring food security and agricultural productivity. However, existing datasets for maize disease detection often lack diversity, typically relying on either lab-generated or field-captured images, and covering a limited range of disease classes. 
 
 To address these limitations, we present a study that integrates three distinct data sources:
@@ -26,24 +26,24 @@ This study highlights the potential of multi-source data integration and transfe
 ---
 
 ## Installation
-The code has the following dependencies:
-- `numpy`
-- `pickle-mixin`
-- `opencv-python`
-- `tensorflow`
-- `matplotlib`
-- `seaborn`
-- `scikit-learn`
-- `keras`
-- `pillow`
+The code requires Python 3.7 to run. It has the following dependencies:
+- `numpy 1.21.6`
+- `pickle-mixin 1.0.2`
+- `opencv-python 4.9.0.80`
+- `tensorflow 2.11.0`
+- `matplotlib 3.5.3`
+- `seaborn 0.12.2`
+- `scikit-learn 1.0.2`
+- `keras 2.11.0`
+- `pillow 9.5.0`
 
-Ensure you have Python installed, then install the required dependencies:
+Ensure you have Python 3.7 installed, then install the required dependencies:
 ```sh
 pip install -r requirements.txt
 ```
 
 ## Dataset Preparation
-A comprehensive and diverse dataset for maize disease detection was created by combining images from three distinct datasets. 1000 images of each class were randomly chosen from 23,655 images in the combination. For classes with less than 1000 images, augmentation was performed.
+A comprehensive and diverse dataset for maize disease detection was created by combining images from three distinct datasets. 1000 images of each class were randomly chosen from 23,655 images in the combination. For classes with less than 1000 images, augmentation was performed. The following are the links of the source datasets:
 ### Dataset Links
 
 - **PlantVillage Dataset**  
@@ -54,8 +54,40 @@ A comprehensive and diverse dataset for maize disease detection was created by c
 
 - **Corn Leaf Diseases (NLB)**  
   [Corn Leaf Diseases (NLB) on Kaggle](https://www.kaggle.com/datasets/rabbityashow/corn-leaf-diseasesnlb)
+The final combined dataset can be found in the **Dataset** folder
+## Repository Structure:
+```
+- Dataset
+  - HEALTHY
+  - Maize_Blight
+  - Maize_Common_Rust
+  - Maize_Gray_Leaf_Spot
+  - MLN
+  - MSV
+- Source Code
+  - AlexNet.ipynb
+  - Custom_CNN.ipynb
+  - DenseNet.ipynb
+  - MobileNet.ipynb
+  - ResNet50.ipynb
+  - VGG16.ipynb
+  - XCeption.ipynb
+  - image_preprocessing.py
+- Weights
+  - mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_224_no_top.h5
+  - densenet121_weights_tf_dim_ordering_tf_kernels_notop.h5
+  - resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5
+  - vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5
+  - xception_weights_tf_dim_ordering_tf_kernels_notop.h5
+- requirements.txt
+```
+The repository contains the following 3 main folders.  
+**Dataset** contains the combined data from the three source datasets as described in Dataset Preparation.
+**Source Code** contains the code files of all the described models.
+**Weights** contains the weights of the pretrained models prior to finetuning.
+## Dataset Structure:
 
-### Dataset Structure:
+The dataset folder contains six subfolders, each representing a disease class of maize.
 ```
 - Dataset
   - HEALTHY
