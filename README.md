@@ -53,7 +53,7 @@ A comprehensive and diverse dataset for maize disease detection was created by c
   [Mendeley Data Repository](https://data.mendeley.com/datasets/fkw49mz3xs/1)
 
 - **Corn Leaf Diseases (NLB)**  
-  [Corn Leaf Diseases (NLB) on Kaggle](https://www.kaggle.com/datasets/rabbityashow/corn-leaf-diseasesnlb)
+  [Corn Leaf Diseases (NLB) on Kaggle](https://www.kaggle.com/datasets/rabbityashow/corn-leaf-diseasesnlb)  
 The final combined dataset can be found in the **Dataset** folder
 ## Repository Structure:
 ```
@@ -82,9 +82,9 @@ The final combined dataset can be found in the **Dataset** folder
 - requirements.txt
 ```
 The repository contains the following 3 main folders.  
-**Dataset** contains the combined data from the three source datasets as described in Dataset Preparation.
-**Source Code** contains the code files of all the described models.
-**Weights** contains the weights of the pretrained models prior to finetuning.
+**Dataset** contains the combined data from the three source datasets as described in Dataset Preparation.  
+**Source Code** contains the code files of all the described models.  
+**Weights** contains the weights of the pretrained models prior to finetuning.  
 ## Dataset Structure:
 
 The dataset folder contains six subfolders, each representing a disease class of maize.
