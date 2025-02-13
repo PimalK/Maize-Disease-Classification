@@ -21,7 +21,7 @@ Among the tested models, **DenseNet121 achieved the highest average accuracy of 
 This study highlights the potential of multi-source data integration and transfer learning in building reliable maize disease classification systems, offering valuable insights into the strengths and limitations of different DL approaches in practical agricultural applications.
 ![flowchart](https://github.com/user-attachments/assets/fbd2574d-a48c-454b-bc69-4091297eabae)  
 
-**Workflow of proposed approach**
+**Workflow of the proposed approach**
 
 ---
 
