@@ -21,7 +21,7 @@ Among the tested models, **DenseNet121 achieved the highest average accuracy of 
 This study highlights the potential of multi-source data integration and transfer learning in building reliable maize disease classification systems, offering valuable insights into the strengths and limitations of different DL approaches in practical agricultural applications.
 ![flowchart](https://github.com/user-attachments/assets/fbd2574d-a48c-454b-bc69-4091297eabae)  
 
-**Flow of proposed approach**
+**Workflow of proposed approach**
 
 ---
 
@@ -165,7 +165,7 @@ PimalK, “PimalK/Maize-Disease-Classification: Maize Disease Classification”.
 ## Cite the manuscript as
 ```sh
 @article{Khanpara2025MaizeDisease,
-  author    = {Pimal Khanpara and Bhaumik Panchal and Preeti Kathiria and Usha Patel and Deekshita Athreya},
+  author    = {Pimal Khanpara, Bhaumik Panchal, Preeti Kathiria, Usha Patel, Deekshita Athreya},
   title     = {Comprehensive Maize Disease Classification via Deep Learning with Integrated Multi-Source Data},
   journal   = {The Visual Computer},
   year      = {2025},
